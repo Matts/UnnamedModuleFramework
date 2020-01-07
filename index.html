@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Framework impl</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <div
+        data-js-module="saveName"
+        data-input-field="#typeInMe"
+        data-save-btn="#pressOnMe"
+        data-delete-btn="#remove"
+        >
+    </div>
+
+    <label for="typeInMe">Enter value</label>
+    <input type="text" id="typeInMe">
+
+    <button id="pressOnMe">Save</button>
+    <button id="remove">Delete</button>
+</div>
+
+<div class="wrapper">
+    <div
+        data-js-module="saveName"
+        data-input-field="#typeInMe1"
+        data-save-btn="#pressOnMe1"
+        data-delete-btn="#remove1"
+        >
+    </div>
+
+    <label for="typeInMe1">Value binding between instances</label>
+    <input type="text" id="typeInMe1">
+
+    <button id="pressOnMe1">Save</button>
+    <button id="remove1">Delete</button>
+</div>
+
+<div class="wrapper">
+    <div
+        data-js-module="saveName"
+        data-input-field="#typeInMe2"
+        data-save-btn="#pressOnMe2"
+        data-storage-entry="second"
+        data-mirror="true"
+        >
+    </div>
+
+    <label for="typeInMe2">Instance with other storage key, databinding to other instances</label>
+    <input type="text" id="typeInMe2">
+
+    <button id="pressOnMe2">Save</button>
+</div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
