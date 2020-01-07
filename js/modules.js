@@ -1,6 +1,6 @@
 import saveNameComponent, {defaults as saveNameDefaults} from './component/saveName.js'
-import storageComponent from './component/storage.js'
-import dispatcher from './component/dispatcher.js'
+import storageComponent from './component/util/storage.js'
+import dispatcher from './component/util/dispatcher.js'
 
 /**
  * Register your modules here
