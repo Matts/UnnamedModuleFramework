@@ -77,7 +77,7 @@ export const kernelBuilder = (modules) => {
 
             config = configureModuleDefaults(moduleConfig, config)
 
-            const module = moduleConfig['component'](config); // todo: add defaults
+            const module = moduleConfig['component'](config);
         
             configureModuleDependencies(module, config)
             configureModuleEvents(module)
