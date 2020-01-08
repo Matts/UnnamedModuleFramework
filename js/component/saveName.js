@@ -44,7 +44,8 @@ export default function(config = []) {
         },
         dependencies: {
             'storage': 'storage.textField',
-            'dispatcher': 'dispatcher'
+            'dispatcher': 'dispatcher',
+            'level1': 'level1',
         }
     }
 
