@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // start the kernel with the known modules
     try {
         const kernel = kernelBuilder(modules)
+
         // find all modules that are currently required and start them
         document.querySelectorAll('[data-js-module]').forEach(el => {
             kernel.startModule(el.getAttribute('data-js-module'), {...el.dataset})
